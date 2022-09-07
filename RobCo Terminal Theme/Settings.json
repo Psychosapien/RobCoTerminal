@@ -1,0 +1,52 @@
+
+// PROFILE JSON
+{
+    "antialiasingMode": "grayscale",
+    "backgroundImage": "$ENV:OneDrive\\\\RobCoTerminal.png",
+    "backgroundImageAlignment": "center",
+    "backgroundImageOpacity": 0.59999999999999998,
+    "backgroundImageStretchMode": "fill",
+    "colorScheme": "Fallout",
+    "commandline": "powershell.exe -noprofile -noexit -command \"invoke-expression '. ''$ENV:OneDrive\\Documents\\WindowsPowerShell\\profile-RobCo.ps1''' \"",
+    "cursorShape": "filledBox",
+    "experimental.retroTerminalEffect": true,
+    "font": 
+    {
+        "face": "Lucida Sans Typewriter",
+        "size": 16,
+        "weight": "semi-bold"
+    },
+    "guid": "{1ebe8e32-79c2-4600-886b-4e77830e715c}",
+    "hidden": false,
+    "icon": "$ENV:OneDrive\\\\FalloutBoy.png",
+    "intenseTextStyle": "all",
+    "name": "RobCo",
+    "padding": "36",
+    "tabTitle": "ROBCO INDUSTRIES"
+}
+
+//THEME JSON
+
+{
+    "background": "#0C0C0C",
+    "black": "#0C0C0C",
+    "blue": "#26E476",
+    "brightBlack": "#767676",
+    "brightBlue": "#26E476",
+    "brightCyan": "#26E476",
+    "brightGreen": "#26E476",
+    "brightPurple": "#26E476",
+    "brightRed": "#26E476",
+    "brightWhite": "#26E476",
+    "brightYellow": "#26E476",
+    "cursorColor": "#FFFFFF",
+    "cyan": "#26E476",
+    "foreground": "#26E476",
+    "green": "#022000",
+    "name": "Fallout",
+    "purple": "#26E476",
+    "red": "#26E476",
+    "selectionBackground": "#0C0C0C",
+    "white": "#26E476",
+    "yellow": "#26E476"
+},
