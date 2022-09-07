@@ -2,7 +2,7 @@
 
 This Windows Terminal theme is designed to provide an authentic RobCo experience, minus the radiation.
 
-## To use
+## How to use this theme
 
 To set up the profile,simply do the following:
 
