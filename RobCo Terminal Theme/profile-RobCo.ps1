@@ -39,10 +39,12 @@ function Get-Nonsense {
     param(
         [int]$number = 15
     )
+
+    $chars =@("!","£","$","%","^","&","*","(",")","_","+","-","=","}","{","~","@",":","?",">","<","|","¬","]","[","#","'",";","/",".",",","\")
     $Line = @()
     for ($i = 0; $i -lt $number; $i++) {
-        $Uni = $([char](Get-Random -Minimum 1 -Maximum 2000))
-        $Line += $Uni
+        $char = Get-random $chars
+        $Line += $char
     }
 
     $line
@@ -124,31 +126,31 @@ $GameMessage | get-easyview -Milliseconds 50
 
 $Passwords=
 "
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
-$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t$(Get-WordClue)`t`t`t`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
+$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t$(Get-WordClue)`t
 "
 
-$Passwords | get-easyview -Milliseconds 100 -Pace Line
+$Passwords.Replace(" ","") | get-easyview -Milliseconds 100 -Pace Line
 
 $splits = $passwords.split()
 $possiblePasswords = @()
@@ -221,3 +223,4 @@ $Global:ProgressPreference = $OriginalProgressPreference
 ##PUT SOME KIND OF SCRIPT OR COMMAND HERE
 
 #region Password Selection
+
